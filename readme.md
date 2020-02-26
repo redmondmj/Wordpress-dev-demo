@@ -63,4 +63,9 @@ define( 'WP_DEBUG', true );
 define( 'WP_DEBUG_LOG', true );
 PHP
 ```
-* Create the actual DB (if needed): `mysql -u root -p -e "create database wpdev"`
+* Create the actual DB (if needed): `wp db create`
+* Run the Install: `wp install core` [doc](https://developer.wordpress.org/cli/commands/core/install/):
+```
+$ wp core install --url=wp-dev.ca --title="NSCC WP Dev" --admin_user=redmondo --admin_password=*kw*5ZI13kmb --admin_email=info@wp-dev.ca
+```
+

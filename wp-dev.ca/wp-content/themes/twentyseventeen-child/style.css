@@ -1,0 +1,58 @@
+/*
+Theme Name: Twenty Seventeen - Child
+Theme URI: https://mattredmond.ca
+Author: Matt R.
+Author URI: https://mattredmond.ca
+Description: A sample child theme.
+Version: 1.0
+Text Domain: mattredmond.ca
+Template: twentyseventeen
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.site-title {
+    font-size: 4.75rem;
+    line-height: 1.25;
+}
+
+@media screen and (min-width: 48em) {
+
+    body:not(.has-sidebar):not(.page-one-column) .page-header,
+    body.has-sidebar.error404 #primary .page-header,
+    body.page-two-column:not(.archive) #primary .entry-header,
+    body.page-two-column.archive:not(.has-sidebar) #primary .page-header {
+        width: 75%;
+    }
+
+    .blog:not(.has-sidebar) #primary article,
+    .archive:not(.page-one-column):not(.has-sidebar) #primary article,
+    .search:not(.has-sidebar) #primary article,
+    .error404:not(.has-sidebar) #primary .page-content,
+    .error404.has-sidebar #primary .page-content,
+    body.page-two-column:not(.archive) #primary .entry-content,
+    body.page-two-column #comments {
+        float: left;
+        width: 75%;
+    }
+
+    #secondary {
+        padding: 1em;
+        width: 25%;
+        float: right;
+    }
+
+    /* mind the media query... what will happen here under min-width: 48em? */
+    body.page:not(.twentyseventeen-front-page) .entry-title {
+        color: rgb(119, 22, 22);
+        font-size: 2.2rem;
+    }
+}
+
+body.has-header-image .site-title,
+body.has-header-video .site-title,
+body.has-header-image .site-title a,
+body.has-header-video .site-title a {
+    color: rgb(144, 226, 88);

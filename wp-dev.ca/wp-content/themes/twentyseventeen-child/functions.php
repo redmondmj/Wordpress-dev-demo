@@ -10,4 +10,10 @@ function my_theme_enqueue_styles() {
         array( $parent_style ),
         wp_get_theme()->get('Version')
     );
+    wp_enqueue_style( 'block-style', 
+    get_stylesheet_directory_uri() . '/style-block.css', 
+    '', 
+    NULL, 
+    'all'
+    );
 }

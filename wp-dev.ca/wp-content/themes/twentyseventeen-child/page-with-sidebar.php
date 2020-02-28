@@ -1,7 +1,7 @@
 <?php
 /**
-Template Name: Page with side bar
- */
+*Template Name: Page with side bar
+*/
 
 get_header(); ?>
 

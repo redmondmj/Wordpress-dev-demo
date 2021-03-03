@@ -44,8 +44,8 @@ node_modules/
 }
 ```
 * update composer: `composer global update`
-* try wp-cli: `wp help`
-* Update PATH if needed: `C:\Users\you\AppData\Roaming\Composer\vendor\bin`
+* try wp-cli: `wp help` ideally via git-bash
+* Update PATH if needed: `$env:Path += ";C:\Users\you\AppData\Roaming\Composer\vendor\bin"`
 
 ## Install on WSL 
 * `sudo curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar`

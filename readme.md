@@ -28,9 +28,9 @@ node_modules/
 *.sqlite
 ```
 
-## Install wp-cli via Composer (global)
+## Install on Windows via Composer (global)
 * see [the handbook](https://make.wordpress.org/cli/handbook/installing/) for alternate installs
-* `cd ~/AppData/Roaming/Composer`
+* Windows: `cd ~/AppData/Roaming/Composer`
 * edit composer.json: `code composer.json`
 * add: `"wp-cli/wp-cli-bundle": "*"`
 * i.e.:
@@ -46,6 +46,11 @@ node_modules/
 * update composer: `composer global update`
 * try wp-cli: `wp help`
 * Update PATH if needed: `C:\Users\you\AppData\Roaming\Composer\vendor\bin`
+
+## Install on WSL 
+* `sudo curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar`
+* `sudo chmod +x wp-cli.phar`
+* `sudo mv wp-cli.phar /usr/local/bin/wp`
 
 ## Install WP
 * view the [quickstart guide](https://make.wordpress.org/cli/handbook/) for more examples

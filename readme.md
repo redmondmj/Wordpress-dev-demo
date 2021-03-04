@@ -47,7 +47,7 @@ node_modules/
 * try wp-cli: `wp help` ideally via git-bash
 * Update PATH if needed: `$env:Path += ";C:\Users\you\AppData\Roaming\Composer\vendor\bin"`
 
-## Install on WSL 
+## Install on WSL (Optional - Instead of Windows Install)
 * `sudo curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar`
 * `sudo chmod +x wp-cli.phar`
 * `sudo mv wp-cli.phar /usr/local/bin/wp`
@@ -55,15 +55,15 @@ node_modules/
 ## Install WP
 * view the [quickstart guide](https://make.wordpress.org/cli/handbook/) for more examples
 * Download WP to current folder: `wp core download`
-* (optional) specify new folder: `wp core download --path=wp-dev.ca`
+* (optional) specify new folder: `wp core download --path=%YourAppDir%`
 * Create a new wp-config.php: `wp config create` [doc](https://developer.wordpress.org/cli/commands/config/create/):
 ```
-$ cd wpclidemo.dev
-$ wp config create --dbname=wpdev --dbuser=root --prompt=dbpass
+$ cd %YourAppDir%
+$ wp config create --dbname=wpdev --dbuser=%Username% --prompt=dbpass
 ```
 * OR With DEBUG:
 ```
-wp config create --dbname=wpdev --dbuser=root --dbpass= --extra-php <<PHP
+wp config create --dbname=wpdev --dbuser=%Username% --dbpass=%Password% --extra-php <<PHP
 define( 'WP_DEBUG', true );
 define( 'WP_DEBUG_LOG', true );
 PHP
